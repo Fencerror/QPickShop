@@ -12,5 +12,14 @@ export const headphones = [
     title: "Apple EarPods",
     price: 3927,
     rate: 2.7,
+  },
+  {
+    id: 3,
+    img: "/assets/products/appleairpods3.png",
+    title: "Apple EarPods",
+    price: 2127,
+    rate: 3.6,
   }
 ] as const;
+
+

@@ -1,13 +1,12 @@
-import './App.css';
-import AddToCartLink from './features/addToCart/UI/addToCart-Link';
+import { RouterProvider } from './app/providers/router';
+import { CartProvider } from "./entities/cart/CartProvider";
+import './app/styles/globals.css';
+
 function App() {
   return (
-    <>
-    <div className="main-div">
-      hi
-      <AddToCartLink />
-    </div>
-    </>
+    <CartProvider>
+      <RouterProvider />
+    </CartProvider>
   );
 }
 

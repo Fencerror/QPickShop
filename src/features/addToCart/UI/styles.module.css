@@ -1,16 +1,16 @@
 @import url('../../../app/styles/fonts.css');
 
-.add-to-cart-link {
+.addToCartLink {
   color: #000000;
   font-family: 'Montserrat';
   font-weight: 600;
   font-size: 17px;
   line-height: 100%;
   letter-spacing: 0%;
-
+  text-decoration: none;
 }
 
-.add-to-cart-link:hover {
+.addToCartLink:active {
   text-decoration: underline;
 }
 

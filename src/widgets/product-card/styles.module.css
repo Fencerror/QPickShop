@@ -1,0 +1,76 @@
+.card {
+  border-radius: 30px;
+  padding: 16px;
+  width: 350px;
+  height: 407px;
+  background-color: #fff;
+  display: grid;
+  grid-template-areas:
+    "image image image"
+    "title title price"
+    "rate rate buy";
+  row-gap: 5px;
+  }
+
+.image {
+  width: 220px;
+  height: 237px;
+  justify-self: center;
+  grid-area: image;
+  object-fit: contain; 
+}
+
+.title {
+  font-size: 17px;
+  margin: 0;
+  margin-bottom: -30px;
+  grid-area: title;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  align-self: center; 
+}
+
+.price {
+  font-weight: bold;
+  margin: 0;
+  grid-area: price;
+  justify-self: end; 
+  align-self: center;
+  color: #FFA542;
+  font-family: 'Montserrat', sans-serif;
+  width: 59px;
+  height: 21px;
+  top: 438.35px;
+  left: 452px;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-bottom: -30px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  grid-area: rate;
+}
+
+.ratingText {
+  font-size: 17px;
+  font-family: 'Montserrat', sans-serif;
+  color: #838383;
+}
+
+.buy {
+  grid-area: buy;
+  justify-self: end; 
+  align-self: center;
+  width: 65px;
+  height: 21px;
+  top: 491.35px;
+  left: 449px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
