@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styles from "./styles.module.css";
 import { CartItemCard } from "../../widgets/cart-item-card";
 import { useCart } from "../../entities/cart/model";
-
+import { TotalPrice } from "../../widgets/total-price";
 
 
 export const CartPage = () => {
@@ -14,10 +14,10 @@ export const CartPage = () => {
   } = useCart();
   
   return (
-    <div>
-      <header className={styles["catalog-header"]}>
+    <div className={styles["cart-page"]}>
+      <header className={styles["cart-header"]}>
         <div className={styles["shop-name-text"]}>
-          <Link to="/catalog"><h3><b>QPICK</b></h3></Link>
+          <Link to="/catalog"  className={styles["shop-name-text-link"]} ><h3><b>QPICK</b></h3></Link>
         </div>
         <div className={styles["header-buttons"]}>
           <a href="#">
@@ -48,10 +48,8 @@ export const CartPage = () => {
           </div>
         )}
 
-        <div className={styles.summary}>
-          <h3>Итого: {totalPrice} ₽</h3>
-          <button className={styles.checkoutButton}>Оформить заказ</button>
-        </div>
+        <TotalPrice totalPrice={totalPrice} /> 
+
       </main>
       <footer className={styles["catalog-footer"]}>
          <div className={styles["shop-name-text"]}>

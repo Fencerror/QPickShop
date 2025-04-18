@@ -1,11 +1,11 @@
-.catalog-page{
+.cart-page{
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--bg-color);
 }
 
-.catalog-header {
+.cart-header {
   display: flex;
   position: sticky;
   top:0;
@@ -17,12 +17,23 @@
   width: 1200px;
 }
 
+
 .shop-name-text h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
+  font-size: 25px;
   font-weight: 700;
   margin: 0;
 }
+
+.shop-name-text-link {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
 
 .header-buttons {
   display: flex;
@@ -30,16 +41,61 @@
   gap: 10px;
 }
 
-.catalog-main {
-  padding: 20px;
+.main {
+  flex: 1;
+  padding: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
 }
 
-.headphones-section h5 {
+.main h1 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
+  font-size: 28px;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
+
+/* Список товаров */
+.itemsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Блок итого */
+.summary {
+  background-color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.summary h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.checkoutButton {
+  background-color: #101010;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+
 
 .catalog-footer {
   background-color: #fff;

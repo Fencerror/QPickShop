@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { headphones } from "../../entities/product/mock/headphones";
-import ProductCard from "../../widgets/product-card";
+import ProductCard from "../../widgets/catalog-item-card";
 import styles from "./styles.module.css";
 import { CartButton } from "../../widgets/cart-button";
 import { wirelessHeadphones } from "../../entities/product/mock/wirelessheadphones";
