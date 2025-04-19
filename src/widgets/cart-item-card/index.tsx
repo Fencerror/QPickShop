@@ -13,7 +13,7 @@ export const CartItemCard = ({
 }: CartItemCardProps) => {
   return (
     <div className={styles.card}>
-      <div className={styles.remove}>
+      <div className={styles.remove} onClick={onRemove}>
         <img src='/assets/logos/remove.svg' alt='remove-logo'/>
       </div>
 

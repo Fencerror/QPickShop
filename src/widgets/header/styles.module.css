@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  position: sticky;
+  top:0;
+  border-radius: 0 0 30px 30px;
+  background-color: var(--bg-color);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  width: 1200px;
+}
+
+
+.shop-name-text h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.shop-name-text-link {
+  text-decoration: none;
+  color: black;
+  font-size: 25px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
