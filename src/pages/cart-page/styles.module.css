@@ -56,7 +56,12 @@
   margin-bottom: 30px;
 }
 
-/* Список товаров */
+.cart-content{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 .itemsList {
   display: flex;
   flex-direction: column;

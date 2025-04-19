@@ -32,23 +32,24 @@ export const CartPage = () => {
       <main className={styles.main}>
         <h1>Корзина</h1>
         
-        {cart.length === 0 ? (
-          <p>Корзина пуста</p>
-        ) : (
-          <div className={styles.itemsList}>
-            {cart.map(item => (
-              <CartItemCard
-                key={item.product.id}
-                item={item}
-                onIncrease={() => updateQuantity(item.product.id, item.quantity + 1)}
-                onDecrease={() => updateQuantity(item.product.id, item.quantity - 1)}
-                onRemove={() => removeFromCart(item.product.id)}
-              />
-            ))}
-          </div>
-        )}
-
-        <TotalPrice totalPrice={totalPrice} /> 
+        <div className={styles["cart-content"]}>
+          {cart.length === 0 ? (
+            <p>Корзина пуста</p>
+          ) : (
+            <div className={styles.itemsList}>
+              {cart.map(item => (
+                <CartItemCard
+                  key={item.product.id}
+                  item={item}
+                  onIncrease={() => updateQuantity(item.product.id, item.quantity + 1)}
+                  onDecrease={() => updateQuantity(item.product.id, item.quantity - 1)}
+                  onRemove={() => removeFromCart(item.product.id)}
+                />
+              ))}
+            </div>
+          )}
+          <TotalPrice totalPrice={totalPrice} />
+        </div>
 
       </main>
       <footer className={styles["catalog-footer"]}>
