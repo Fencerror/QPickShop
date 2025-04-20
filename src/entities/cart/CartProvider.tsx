@@ -14,32 +14,25 @@ interface ICartContext {
 export const CartContext = createContext<ICartContext | undefined>(undefined);
 
 export const CartProvider = ({ children }: { children: ReactNode }) => {
-  // Инициализация состояния из sessionStorage
   const [cart, setCart] = useState<ICartItem[]>(() => {
-    const saved = sessionStorage.getItem('cart');
+    const saved = sessionStorage.getItem("cart");
     return saved ? JSON.parse(saved) : [];
   });
 
-  // Обновление sessionStorage при изменении cart
   useEffect(() => {
-    sessionStorage.setItem('cart', JSON.stringify(cart));
+    sessionStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = cart.reduce((sum, item) => sum + item.product.price * item.quantity, 0);
 
   const addToCart = (productId: number) => {
-    const product = headphones.find((p) => p.id === productId);
+    const product = headphones.find(p => p.id === productId);
     if (!product) return;
     setCart(prev => {
       const existingItem = prev.find(item => item.product.id === productId);
-      return existingItem
-        ? prev.map(item =>
-            item.product.id === productId
-              ? { ...item, quantity: item.quantity + 1 }
-              : item
-          )
-        : [...prev, { product, quantity: 1 }];
+      return existingItem ? prev.map(item => item.product.id === productId ? { ...item, quantity: item.quantity + 1 } : item)
+                          : [...prev, { product, quantity: 1 }];
     });
   };
 
@@ -53,13 +46,10 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
       return;
     }
     setCart(prev =>
-      prev.map(item =>
-        item.product.id === productId ? { ...item, quantity: newQuantity } : item
-      )
+      prev.map(item => item.product.id === productId ? { ...item, quantity: newQuantity } : item)
     );
   };
 
-  // Оптимизируем значение с useMemo
   const value = useMemo(() => ({
     cart,
     addToCart,
@@ -69,18 +59,11 @@ export const CartProvider = ({ children }: { children: ReactNode }) => {
     totalPrice
   }), [cart, totalItems, totalPrice]);
 
-  return (
-    <CartContext.Provider value={value}>
-      {children}
-    </CartContext.Provider>
-  );
+  return <CartContext.Provider value={value}>{children}</CartContext.Provider>;
 };
-
 
 export const useCart = () => {
   const context = useContext(CartContext);
-  if (!context) {
-    throw new Error("ошибка");
-  }
+  if (!context) throw new Error("CartContext not found");
   return context;
 };

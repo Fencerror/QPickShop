@@ -7,27 +7,19 @@ import { Footer } from "../../widgets/footer";
 import { useLanguage } from "../../features/language/LanguageContext";
 
 export const CartPage = () => {
-  const{
-    cart,
-    updateQuantity,
-    removeFromCart,
-    totalPrice,
-  } = useCart();
+  const { cart, updateQuantity, removeFromCart, totalPrice } = useCart();
   const { language } = useLanguage();
   return (
-
     <div className={styles["cart-page"]}>
       <Header />
-
       <main className={styles.main}>
         <h1>{language === "en" ? "Cart" : "Корзина"}</h1>
-        
         <div className={styles["cart-content"]}>
           {cart.length === 0 ? (
-            <div className={styles['empty-state']}></div>
+            <div className={styles["empty-state"]}></div>
           ) : (
             <div className={styles.itemsList}>
-              {cart.map(item => ( 
+              {cart.map(item => (
                 <CartItemCard
                   key={item.product.id}
                   item={item}
@@ -40,11 +32,9 @@ export const CartPage = () => {
           )}
           <TotalPrice totalPrice={totalPrice} />
         </div>
-
       </main>
-      
       <Footer />
     </div>
-  )
-}
+  );
+};
 

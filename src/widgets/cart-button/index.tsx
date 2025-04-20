@@ -8,9 +8,7 @@ export const CartButton = () => {
   return (
     <Link to="/cart" className={styles.cartButton}>
       <img src="/assets/logos/cart.svg" alt="Корзина" />
-      {totalItems > 0 && (
-        <span className={styles.circle}>{totalItems}</span>
-      )}
+      {totalItems > 0 && <span className={styles.circle}>{totalItems}</span>}
     </Link>
   );
 };

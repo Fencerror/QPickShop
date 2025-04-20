@@ -58,7 +58,7 @@
 .title {
   margin: 0;
   font-size: 0.875rem; 
-  font-weight: 500;
+  font-weight: 550;
   color: #1D1D1D;
 }
 
@@ -104,6 +104,16 @@
   height: 1.875rem;
   position: relative;
 }
+
+.button:hover {
+  background: #ffa500;
+  transition: 0.2s;
+}
+
+.button:active {
+  background: #ffae00;
+}
+
 
 .button:first-of-type::before {
   content: "";

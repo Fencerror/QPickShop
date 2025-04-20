@@ -11,7 +11,7 @@ interface ProductCartProps {
 function ProductCard({ product, onOpenModal }: ProductCartProps) {
   const { language } = useLanguage();
   return (
-    <div className={styles.card}> 
+    <div className={styles.card}>
       <img src={product.img} alt={product.title} className={styles.image} />
       <h3 className={styles.title}>{product.title}</h3>
       <p className={styles.price}>{product.price} ₽</p>
@@ -20,12 +20,9 @@ function ProductCard({ product, onOpenModal }: ProductCartProps) {
         <span className={styles.ratingText}>{product.rate}</span>
       </div>
       <div className={styles.buy}>
-        <AddToCartLink productId={product.id} /> 
+        <AddToCartLink productId={product.id} />
       </div>
-      <a 
-        onClick={() => onOpenModal(product)}
-        className={styles.detailButton}
-      >
+      <a onClick={() => onOpenModal(product)} className={styles.detailButton}>
         {language === "en" ? "Show more" : "Подробнее"}
       </a>
     </div>

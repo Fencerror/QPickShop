@@ -1,0 +1,25 @@
+.favourites-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--bg-color);
+  min-height: 100vh;
+}
+
+
+.favourites-main {
+  flex: 1;
+  padding: 1.875rem; 
+  max-width: 75rem; 
+  margin: 0 auto;
+  width: 100%;
+}
+
+.favourites-main h1 {
+  font-weight: 600;
+  font-size: 1.25rem; 
+  line-height: 100%;
+  letter-spacing: 0;
+  width: 20.375rem; 
+  height: 1.5rem;   
+}
