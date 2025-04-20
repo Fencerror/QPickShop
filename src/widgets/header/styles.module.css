@@ -13,17 +13,21 @@
 }
 
 .shop-name-text h3 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.5625rem; 
   font-weight: 700;
   margin: 0;
+
+}
+
+.shop-name-text h3:hover {
+  opacity: 0.7;
+  transition: 0.1s ease-in-out;
 }
 
 .shop-name-text-link {
   text-decoration: none;
   color: black;
   font-size: 1.5625rem;
-  font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin: 0;
 }

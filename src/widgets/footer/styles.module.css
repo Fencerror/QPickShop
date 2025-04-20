@@ -44,13 +44,15 @@
 
 .footer-links-column a {
   display: block;
-  font-family: 'Montserrat', sans-serif;
   color: #000;
   text-decoration: none;
 }
 
+.footer-links-column a:hover {
+  text-decoration: underline;
+}
+
 .footer-lang-text {
-  font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   font-size: 1.0625rem; 
   line-height: 100%;
@@ -59,14 +61,17 @@
   height: 1.3125rem; 
   margin-left: 17.25rem; 
   margin-top: -5.0625rem; 
+  cursor: pointer;
+}
 
+.footer-lang-text:hover {
+  text-decoration: underline;
 }
 
 .footer-lang-buttons {
   order: 2;
   width: 100%;
   margin-top: 2.125rem; 
-  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 0.9375rem; 
   line-height: 100%;
@@ -75,7 +80,6 @@
 }
 
 .footer-about-second-text {
-  font-family: 'Montserrat', sans-serif;
   font-size: 0.875rem; 
   margin: 0;
   width: 9.5rem; 
@@ -89,6 +93,11 @@
 .footer-about-second-text a {
   color:  #000;
   text-decoration: none;
+}
+
+
+.footer-about-second-text a:hover span {
+  text-decoration: underline;
 }
 
 .footer-lang-buttons p span {
@@ -108,6 +117,10 @@
   width: 1.875rem; 
   height: 1.875rem; 
   cursor: pointer;
+}
+
+.footer-socials img:hover {
+  opacity: 0.7;
 }
 
 @media (max-width: 768px) {
@@ -152,12 +165,15 @@
     align-items: center;
     text-align: center;
   }
+
+  
   .footer-lang-text,
   .footer-lang-buttons {
     margin-left: 0;
     text-align: center;
     font-size: 0.8rem;
   }
+  
   .footer-socials {
     justify-content: center;
   }

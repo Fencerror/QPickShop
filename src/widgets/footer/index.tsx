@@ -32,7 +32,7 @@ export const Footer = () => {
                 }
               }}
             >
-              <span style={{ color: language === "ru" ? "#FFA542" : "inherit" }}>Рус</span>
+              <span style={{ color: language === "ru" ? "#FFA542" : "inherit",  }}>Рус</span>
             </a> 
             <a 
               href="#"

@@ -31,4 +31,5 @@ function ProductCard({ product, onOpenModal }: ProductCartProps) {
     </div>
   );
 }
+
 export default ProductCard;
