@@ -1,4 +1,4 @@
-.catalog-page{
+.catalog-page {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,41 +7,43 @@
   min-height: 100vh;
 }
 
-
 .catalog-main {
-  padding: 20px;
+  padding: 1.25rem; 
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;    
   flex-direction: column;
   flex: 1;
 }
 
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1.25rem;
 }
 
-.headphones-section h5 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color:#838383;
-  width: 114px;
-  height: 24px;
-  top: 88px;
-  left: 182px;
-}
-
+.headphones-section h5,
 .wirelessHeadphones-section h5 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  margin-bottom: 15px;
-  color:#838383;
-  width: 567px;
-  height: 23.95044708251953px;
+  margin-bottom: 0.9375rem; 
+  color: #838383;
+}
 
-  
+@media (max-width: 1024px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr));
+  }
+  .catalog-main {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr)); 
+  }
+  .catalog-main {
+    padding: 1rem;
+  }
 }

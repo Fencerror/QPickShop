@@ -4,9 +4,10 @@ import styles from "./styles.module.css";
 
 interface ProductCartProps {
   product: IProduct;
+  onOpenModal: (product: IProduct) => void;
 }
 
-function ProductCard({ product}: ProductCartProps) {
+function ProductCard({ product, onOpenModal }: ProductCartProps) {
   return (
     <div className={styles.card}> 
       <img src={product.img} alt={product.title} className={styles.image} />
@@ -19,6 +20,12 @@ function ProductCard({ product}: ProductCartProps) {
       <div className={styles.buy}>
         <AddToCartLink productId={product.id} /> 
       </div>
+      <a 
+        onClick={() => onOpenModal(product)}
+        className={styles.detailButton}
+      >
+        Подробнее
+      </a>
     </div>
   );
 }

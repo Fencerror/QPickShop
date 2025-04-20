@@ -9,9 +9,7 @@ export const Header = () => {
         <Link to="/catalog"  className={styles["shop-name-text-link"]} ><h3><b>QPICK</b></h3></Link>
       </div>
       <div className={styles["header-buttons"]}>
-        <a href="#">
           <img src="/assets/logos/heart.svg"  />
-        </a>
       <CartButton />
     </div>
   </header>

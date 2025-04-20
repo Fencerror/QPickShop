@@ -1,40 +1,45 @@
 .catalog-footer {
   background-color: #fff;
-  padding: 20px;
-  border-radius: 30px 30px 0 0;
-  width: 1146px;
-  height: 149px;
+  padding: 1.25rem;
+  border-radius: 1.875rem 1.875rem 0 0; 
+  width: 100%;
+  max-width: 71.625rem; 
+  height: 9.3125rem; 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   color: #000;
   margin-top: auto;
+  z-index: 2;
 }
 
+.shop-name-text {
+  width: 5.3125rem; 
+  height: 1.875rem; 
+  margin-top: -0.75rem; 
+  margin-left: 0.5rem;
+}
+
+.shop-name-text h3 {
+  font-size: 1.5625rem; 
+  line-height: 100%;
+  letter-spacing: 0%;
+}
 
 .footer-links {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; 
-  align-items: center;
-  width: 427px;
-  height: 82.79808044433594px;
-  top: 1513.72px;
-  left: 529px;
-
+  width: 37.2917%;
+  height: 5.1875rem; 
 }
 
 .footer-links-column {
-  position: relative;
-  flex: 1;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 100%;
-  letter-spacing: 0%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  width: 6.3125rem; 
+  height: 5.1875rem; 
+  margin-top: 1.1875rem; 
 }
 
 .footer-links-column a {
@@ -42,79 +47,118 @@
   font-family: 'Montserrat', sans-serif;
   color: #000;
   text-decoration: none;
-  margin-bottom: 15px; 
 }
 
-.footer-about {
+.footer-lang-text {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
-  font-size: 17px;
+  font-size: 1.0625rem; 
   line-height: 100%;
   letter-spacing: 0%;
-  flex: 1;
-  text-align: right;
-  display: flex;
-  flex-direction: column;  
-  align-items: flex-end;
-  gap: 35px; 
+  width: 9.5rem; 
+  height: 1.3125rem; 
+  margin-left: 17.25rem; 
+  margin-top: -5.0625rem; 
+
 }
-.footer-lang-text{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 17px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  margin: 0;
-  padding: 0;
-}
+
 .footer-lang-buttons {
-  display: flex;
-  align-items: center;
-  order: 2;           
+  order: 2;
   width: 100%;
-  justify-content: flex-end;
-  margin-top: 4px;
+  margin-top: 2.125rem; 
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 0.9375rem; 
   line-height: 100%;
   letter-spacing: 0%;
-
+  margin-left: 16.6875rem; 
 }
 
-.footer-about-first-text {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
-  margin: 0;
-  width: 152px;
-}
 .footer-about-second-text {
   font-family: 'Montserrat', sans-serif;
-  font-size: 14px;
+  font-size: 0.875rem; 
   margin: 0;
-  width: 152px;
+  width: 9.5rem; 
   display: flex;
-  align-items: center; 
-  justify-content: center; 
-  gap: 8px; 
+  align-items: center;
+  justify-content: center;
+  gap: 1.1875rem; 
+  text-decoration: none;
+}
+
+.footer-about-second-text a {
+  color:  #000;
+  text-decoration: none;
 }
 
 .footer-lang-buttons p span {
   color: #FFA542;
 }
 
-.footer-socials{
+.footer-socials {
+  width: 7.875rem; 
+  height: 1.875rem;
   display: flex;
   flex-direction: row;
-  align-items: flex-start; 
-}
-
-.footer-socials2{
-  display: flex;
-  flex-direction: row;
-  align-items: center; 
 }
 
 .footer-socials img {
-  margin-right: 10px;
+  margin-top: 0.625rem; 
+  margin-right: 0.9375rem; 
+  width: 1.875rem; 
+  height: 1.875rem; 
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .catalog-footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    height: auto;
+  }
+  .footer-links {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+  .shop-name-text {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .footer-lang-text,
+  .footer-lang-buttons {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .catalog-footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 0.75rem;
+    font-size: 0.85rem;
+  }
+  .shop-name-text h3 {
+    font-size: 1.25rem;
+  }
+  .footer-links {
+    padding: 0 0.5rem;
+    font-size: 0.85rem;
+  }
+  .footer-links-column {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+  .footer-lang-text,
+  .footer-lang-buttons {
+    margin-left: 0;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+  .footer-socials {
+    justify-content: center;
+  }
 }

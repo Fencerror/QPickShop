@@ -1,19 +1,20 @@
 .header {
   display: flex;
   position: sticky;
-  top:0;
-  border-radius: 0 0 30px 30px;
+  top: 0;
+  border-radius: 0 0 1.875rem 1.875rem; 
   background-color: var(--bg-color);
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  width: 1200px;
+  padding: 1.25rem; 
+  width: 100%;
+  max-width: 75rem; 
+  z-index: 2;
 }
-
 
 .shop-name-text h3 {
   font-family: 'Montserrat', sans-serif;
-  font-size: 25px;
+  font-size: 1.5625rem; 
   font-weight: 700;
   margin: 0;
 }
@@ -21,15 +22,30 @@
 .shop-name-text-link {
   text-decoration: none;
   color: black;
-  font-size: 25px;
+  font-size: 1.5625rem;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   margin: 0;
 }
 
-
 .header-buttons {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
+  width: 4.6rem;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .shop-name-text h3,
+  .shop-name-text-link {
+    font-size: 1.25rem; 
+  }
+  .header-buttons {
+    gap: 0.5rem;
+  }
 }
