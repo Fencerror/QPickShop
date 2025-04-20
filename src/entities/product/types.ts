@@ -4,5 +4,8 @@ export interface IProduct {
   title: string;
   price: number;
   rate: number;
-  details: string;
+  details: {
+    ru: string;
+    en: string;
+  };
 }

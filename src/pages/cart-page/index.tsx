@@ -4,6 +4,7 @@ import { useCart } from "../../entities/cart/model";
 import { TotalPrice } from "../../widgets/total-price";
 import { Header } from "../../widgets/header";
 import { Footer } from "../../widgets/footer";
+import { useLanguage } from "../../features/language/LanguageContext";
 
 export const CartPage = () => {
   const{
@@ -12,13 +13,14 @@ export const CartPage = () => {
     removeFromCart,
     totalPrice,
   } = useCart();
-  
+  const { language } = useLanguage();
   return (
+
     <div className={styles["cart-page"]}>
       <Header />
 
       <main className={styles.main}>
-        <h1>Корзина</h1>
+        <h1>{language === "en" ? "Cart" : "Корзина"}</h1>
         
         <div className={styles["cart-content"]}>
           {cart.length === 0 ? (

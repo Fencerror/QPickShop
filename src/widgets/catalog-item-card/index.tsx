@@ -1,6 +1,7 @@
 import { IProduct } from "../../entities/product/types";
 import { AddToCartLink } from "../../features/addToCart/UI";
 import styles from "./styles.module.css";
+import { useLanguage } from "../../features/language/LanguageContext";
 
 interface ProductCartProps {
   product: IProduct;
@@ -8,6 +9,7 @@ interface ProductCartProps {
 }
 
 function ProductCard({ product, onOpenModal }: ProductCartProps) {
+  const { language } = useLanguage();
   return (
     <div className={styles.card}> 
       <img src={product.img} alt={product.title} className={styles.image} />
@@ -24,7 +26,7 @@ function ProductCard({ product, onOpenModal }: ProductCartProps) {
         onClick={() => onOpenModal(product)}
         className={styles.detailButton}
       >
-        Подробнее
+        {language === "en" ? "Show more" : "Подробнее"}
       </a>
     </div>
   );

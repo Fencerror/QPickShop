@@ -11,8 +11,10 @@
 }
 
 .addToCartLink:active {
-  text-decoration: underline;
+  transform: translateY(1px); 
+  opacity: 0.6; 
 }
+
 
 @media (max-width: 768px) {
   .addToCartLink {

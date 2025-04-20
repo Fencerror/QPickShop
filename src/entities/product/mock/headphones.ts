@@ -5,7 +5,10 @@ export const headphones = [
     title: "Apple BYZ S852I",
     price: 2927,
     rate: 4.7,
-    details: "Apple BYZ S852I — это проводные наушники с качественным звуком и лаконичным дизайном. Они обеспечивают комфортную посадку и подходят для повседневного использования. Благодаря разъёму 3.5 мм наушники совместимы с большинством устройств, а встроенный микрофон позволяет использовать их для звонков и общения. Эргономичная форма и надёжная сборка делают модель удобной и практичной."
+    details: {
+      ru: "Apple BYZ S852I — это проводные наушники с качественным звуком и лаконичным дизайном. Они обеспечивают комфортную посадку и подходят для повседневного использования.",
+      en: "Apple BYZ S852I are wired headphones with quality sound and minimalist design, offering a comfortable fit for everyday use."
+    }
   },
   {
     id: 2,
@@ -13,7 +16,10 @@ export const headphones = [
     title: "Apple EarPods",
     price: 3927,
     rate: 2.7,
-    details: "Apple EarPods — это фирменные проводные наушники от Apple с уникальной формой, точно повторяющей анатомию уха. Они обеспечивают чистое звучание, чёткие высокие частоты и глубокие басы. Оснащены встроенным пультом управления и микрофоном, что делает их удобными для прослушивания музыки и общения. Подключаются через разъём 3.5 мм и совместимы с широким спектром устройств."
+    details: {
+      ru: "Apple EarPods — это фирменные проводные наушники от Apple с уникальной формой, точно повторяющей анатомию уха. Они обеспечивают чистое звучание, чёткие высокие частоты и глубокие басы.",
+      en: "Apple EarPods are branded wired headphones from Apple with a unique shape that precisely matches the anatomy of the ear. They deliver clear sound, crisp highs, and deep bass."
+    }
   },
   {
     id: 3,
@@ -21,7 +27,10 @@ export const headphones = [
     title: "Apple EarPods",
     price: 2127,
     rate: 3.6,
-    details: "Apple EarPods — это фирменные проводные наушники от Apple с уникальной формой, точно повторяющей анатомию уха. Они обеспечивают чистое звучание, чёткие высокие частоты и глубокие басы. Оснащены встроенным пультом управления и микрофоном, что делает их удобными для прослушивания музыки и общения. Подключаются через разъём 3.5 мм и совместимы с широким спектром устройств."
+    details: {
+      ru: "Apple EarPods — это фирменные проводные наушники от Apple с уникальной формой, точно повторяющей анатомию уха. Они обеспечивают чистое звучание, чёткие высокие частоты и глубокие басы.",
+      en: "Apple EarPods are branded wired headphones from Apple with a unique shape that precisely matches the anatomy of the ear. They deliver clear sound, crisp highs, and deep bass."
+    }
   },
   {
     id: 4,
@@ -29,7 +38,10 @@ export const headphones = [
     title: "Apple BYZ S852I",
     price: 2927,
     rate: 4.7,
-    details: "Apple BYZ S852I — это проводные наушники с качественным звуком и лаконичным дизайном. Они обеспечивают комфортную посадку и подходят для повседневного использования. Благодаря разъёму 3.5 мм наушники совместимы с большинством устройств, а встроенный микрофон позволяет использовать их для звонков и общения. Эргономичная форма и надёжная сборка делают модель удобной и практичной."
+    details: {
+      ru: "Apple BYZ S852I — это проводные наушники с качественным звуком и лаконичным дизайном. Они обеспечивают комфортную посадку и подходят для повседневного использования.",
+      en: "Apple BYZ S852I are wired headphones with quality sound and minimalist design, offering a comfortable fit for everyday use."
+    }
   },
   {
     id: 5,
@@ -37,7 +49,10 @@ export const headphones = [
     title: "Apple EarPods",
     price: 3927,
     rate: 2.7,
-    details: "Apple EarPods — это фирменные проводные наушники от Apple с уникальной формой, точно повторяющей анатомию уха. Они обеспечивают чистое звучание, чёткие высокие частоты и глубокие басы. Оснащены встроенным пультом управления и микрофоном, что делает их удобными для прослушивания музыки и общения. Подключаются через разъём 3.5 мм и совместимы с широким спектром устройств."
+    details: {
+      ru: "Apple EarPods — это фирменные проводные наушники от Apple с уникальной формой, точно повторяющей анатомию уха. Они обеспечивают чистое звучание, чёткие высокие частоты и глубокие басы.",
+      en: "Apple EarPods are branded wired headphones from Apple with a unique shape that precisely matches the anatomy of the ear. They deliver clear sound, crisp highs, and deep bass."
+    }
   },
   {
     id: 6,
@@ -45,7 +60,10 @@ export const headphones = [
     title: "Apple EarPods",
     price: 2127,
     rate: 3.6,
-    details: "Apple EarPods — это фирменные проводные наушники от Apple с уникальной формой, точно повторяющей анатомию уха. Они обеспечивают чистое звучание, чёткие высокие частоты и глубокие басы. Оснащены встроенным пультом управления и микрофоном, что делает их удобными для прослушивания музыки и общения. Подключаются через разъём 3.5 мм и совместимы с широким спектром устройств."
+    details: {
+      ru: "Apple EarPods — это фирменные проводные наушники от Apple с уникальной формой, точно повторяющей анатомию уха. Они обеспечивают чистое звучание, чёткие высокие частоты и глубокие басы.",
+      en: "Apple EarPods are branded wired headphones from Apple with a unique shape that precisely matches the anatomy of the ear. They deliver clear sound, crisp highs, and deep bass."
+    }
   }
 ] as const;
 
