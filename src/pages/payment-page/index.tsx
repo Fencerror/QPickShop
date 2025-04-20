@@ -10,18 +10,18 @@ export const PaymentPage = () => (
       <form className={styles.form}>
         <label>
           Номер карты:
-          <input type="text" name="cardNumber" />
+          <input type="text" name="cardNumber" placeholder="0000 0000 0000 0000"/>
         </label>
         <label>
           Дата истечения:
-          <input type="text" name="expiration" placeholder="MM/YY" />
+          <input type="text" name="expiration" placeholder="ММ/ГГ" />
         </label>
         <label>
           CVV:
-          <input type="text" name="cvv" />
+          <input type="text" name="cvv" placeholder="000"/>
         </label>
         <div className={styles.buttonGroup}>
-          <button type="submit">Оплатить сейчас</button>
+          <a href="#" className={styles.submitButton}>Оплатить сейчас</a>
           <Link to="/cart" className={styles.cancelButton}>Отмена</Link>
         </div>
       </form>
