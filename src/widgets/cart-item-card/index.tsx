@@ -14,7 +14,7 @@ export const CartItemCard = ({
   return (
     <div className={styles.card}>
       <div className={styles.remove} onClick={onRemove}>
-        <img src='/assets/logos/remove.svg' alt='remove-logo'/>
+        <img src='assets/logos/remove.svg' alt='remove-logo'/>
       </div>
 
       <div className={styles.left}>

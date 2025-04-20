@@ -22,7 +22,7 @@ export const Footer = () => {
         </p>
         <div className={styles["footer-lang-buttons"]}>
           <p className={styles["footer-about-second-text"]}>
-            <img src="/assets/logos/planet.svg" alt="planet-logo" /> 
+            <img src="assets/logos/planet.svg" alt="planet-logo" /> 
             <a 
               href="#"
               onClick={(e) => {
@@ -55,21 +55,21 @@ export const Footer = () => {
           target="_blank" 
           rel="noopener noreferrer"
         >
-          <img src="/assets/logos/VK.svg" alt="VK" />
+          <img src="assets/logos/VK.svg" alt="VK" />
         </a>
         <a 
           href="https://t.me/fencerror" 
           target="_blank" 
           rel="noopener noreferrer"
         >
-          <img src="/assets/logos/Telegram.svg" alt="Telegram" />
+          <img src="assets/logos/Telegram.svg" alt="Telegram" />
         </a>
         <a 
           href="https://wa.me/79030693110" 
           target="_blank" 
           rel="noopener noreferrer"
         >
-          <img src="/assets/logos/Whatsapp.svg" alt="WhatsApp" />
+          <img src="assets/logos/Whatsapp.svg" alt="WhatsApp" />
         </a>
       </div>
     </footer>

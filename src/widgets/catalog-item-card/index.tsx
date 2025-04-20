@@ -16,7 +16,7 @@ function ProductCard({ product, onOpenModal }: ProductCartProps) {
       <h3 className={styles.title}>{product.title}</h3>
       <p className={styles.price}>{product.price} ₽</p>
       <div className={styles.rating}>
-        <img src="/assets/logos/star.svg" alt="Рейтинг" />
+        <img src="assets/logos/star.svg" alt="Рейтинг" />
         <span className={styles.ratingText}>{product.rate}</span>
       </div>
       <div className={styles.buy}>
