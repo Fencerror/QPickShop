@@ -15,7 +15,7 @@ const PaymentPage = lazy(() =>
 );
 
 export const RouterProvider = () => (
-  <BrowserRouter>
+  <BrowserRouter basename="/QPickShop">
     <Suspense fallback={<Loader />}>
       <Routes>
         <Route path="/" element={<CatalogPage />} />
