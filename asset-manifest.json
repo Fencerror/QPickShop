@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/QPickShop/static/css/main.11b7620f.css",
-    "main.js": "/QPickShop/static/js/main.e767aee6.js",
+    "main.js": "/QPickShop/static/js/main.b539b937.js",
     "static/css/514.5cabca3f.chunk.css": "/QPickShop/static/css/514.5cabca3f.chunk.css",
     "static/js/514.64f12245.chunk.js": "/QPickShop/static/js/514.64f12245.chunk.js",
     "static/css/682.5c16d15d.chunk.css": "/QPickShop/static/css/682.5c16d15d.chunk.css",
     "static/js/682.3ca44544.chunk.js": "/QPickShop/static/js/682.3ca44544.chunk.js",
     "static/css/334.030db56b.chunk.css": "/QPickShop/static/css/334.030db56b.chunk.css",
     "static/js/334.9f70c86c.chunk.js": "/QPickShop/static/js/334.9f70c86c.chunk.js",
-    "static/css/945.1268f6a0.chunk.css": "/QPickShop/static/css/945.1268f6a0.chunk.css",
-    "static/js/945.af77d3d2.chunk.js": "/QPickShop/static/js/945.af77d3d2.chunk.js",
+    "static/css/945.3f1d135a.chunk.css": "/QPickShop/static/css/945.3f1d135a.chunk.css",
+    "static/js/945.c1669f27.chunk.js": "/QPickShop/static/js/945.c1669f27.chunk.js",
     "static/css/132.03d0116c.chunk.css": "/QPickShop/static/css/132.03d0116c.chunk.css",
     "static/js/132.06441b2c.chunk.js": "/QPickShop/static/js/132.06441b2c.chunk.js",
     "static/js/453.0f4552a2.chunk.js": "/QPickShop/static/js/453.0f4552a2.chunk.js",
@@ -19,21 +19,21 @@
     "static/media/Montserrat-Medium.ttf": "/QPickShop/static/media/Montserrat-Medium.d3f3d769c2fc1af5c0b4.ttf",
     "index.html": "/QPickShop/index.html",
     "main.11b7620f.css.map": "/QPickShop/static/css/main.11b7620f.css.map",
-    "main.e767aee6.js.map": "/QPickShop/static/js/main.e767aee6.js.map",
+    "main.b539b937.js.map": "/QPickShop/static/js/main.b539b937.js.map",
     "514.5cabca3f.chunk.css.map": "/QPickShop/static/css/514.5cabca3f.chunk.css.map",
     "514.64f12245.chunk.js.map": "/QPickShop/static/js/514.64f12245.chunk.js.map",
     "682.5c16d15d.chunk.css.map": "/QPickShop/static/css/682.5c16d15d.chunk.css.map",
     "682.3ca44544.chunk.js.map": "/QPickShop/static/js/682.3ca44544.chunk.js.map",
     "334.030db56b.chunk.css.map": "/QPickShop/static/css/334.030db56b.chunk.css.map",
     "334.9f70c86c.chunk.js.map": "/QPickShop/static/js/334.9f70c86c.chunk.js.map",
-    "945.1268f6a0.chunk.css.map": "/QPickShop/static/css/945.1268f6a0.chunk.css.map",
-    "945.af77d3d2.chunk.js.map": "/QPickShop/static/js/945.af77d3d2.chunk.js.map",
+    "945.3f1d135a.chunk.css.map": "/QPickShop/static/css/945.3f1d135a.chunk.css.map",
+    "945.c1669f27.chunk.js.map": "/QPickShop/static/js/945.c1669f27.chunk.js.map",
     "132.03d0116c.chunk.css.map": "/QPickShop/static/css/132.03d0116c.chunk.css.map",
     "132.06441b2c.chunk.js.map": "/QPickShop/static/js/132.06441b2c.chunk.js.map",
     "453.0f4552a2.chunk.js.map": "/QPickShop/static/js/453.0f4552a2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.11b7620f.css",
-    "static/js/main.e767aee6.js"
+    "static/js/main.b539b937.js"
   ]
 }
