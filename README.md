@@ -81,5 +81,3 @@ QPickShop - это интернет-магазин аудио аксессуар
 
 
 
-
-Этот проект распространяется под лицензией MIT. Подробнее см. в файле [LICENSE](https://github.com/Fencerror/QPickShop/blob/main/LICENSE).
